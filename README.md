@@ -1,6 +1,6 @@
 # Trey Suiter's Amazing US Constitution Preamble Word Parser
 
-This exceptionally fancy webpage will parse the US constitution and return how many words begin with "t", end with "e", and both begin with "t" and end with "e".
+This exceptionally fancy webpage will parse the US constitution preamble and return how many words begin with "t", end with "e", and both begin with "t" and end with "e".
 
 You can see this action for yourself at the following link:
 
