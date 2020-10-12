@@ -1,6 +1,6 @@
 // As an example of your coding approach, I'd like you to write me a function that parses the Preamble to the US Constitution (you can hard-code it as a string) and returns a count of how many words begin with 't', how many end with 'e', and how many begin with 't' and end with 'e'. JavaScript, C#, or Dart would be the preferred languages to accomplish this. I'll leave it to you to determine the best way to submit your work (on a webpage, as an executable, etc). I need to be able to execute what you send me, and see your code generate its answer(s).  And what would be extremely helpful is if you document the problems you ran into along the way and describe how you solved them.
 
-//Hard coded preamble
+//Create preamble string
 const us_constitution_preamble = `"We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America."`
 
 //Define function that will return object containing word totals that begin with 't', end with 'e', and begin with 't' and end with 'e'.
@@ -33,12 +33,13 @@ function preambleParser(preamble) {
         }
     });
 
-    //Returns key value pairs for count totals so values have some context
+    //Return key value pairs for count totals so values have some context
     return { 'begins_t_and_ends_e': begins_t_and_ends_e, 'begins_with_t': begins_with_t, 'ends_with_e': ends_with_e }
 }
 
 //Very Fancy HTML Stuff
 
+//Welcome message
 document.getElementById('hello-container').innerHTML = `
 <h1>Welcome to Trey Suiter's Amazing US Constitution Preamble Word Parser!<h1>
 
